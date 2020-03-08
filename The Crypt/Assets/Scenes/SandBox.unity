@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.25
+    agentRadius: 0.1
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
-    manualCellSize: 1
-    cellSize: 0.083333336
+    manualCellSize: 0
+    cellSize: 0.033333335
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 1
@@ -45995,7 +45995,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1949813163}
+      objectReference: {fileID: 1214898851}
     - target: {fileID: 6560761756762831859, guid: c65a77ce4242cd942adae92d4e4fc418,
         type: 3}
       propertyPath: m_Acceleration
@@ -46066,5 +46066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7288771058180237637, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1949813163}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c65a77ce4242cd942adae92d4e4fc418, type: 3}
