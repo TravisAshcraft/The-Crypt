@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Crypt.Combat
 {
-    public class Fighter : MonoBehaviour 
+    public class Fighter : MonoBehaviour, IAction 
     {
         [SerializeField] float weaponRange = 2f;
         Transform target;
@@ -18,7 +18,7 @@ namespace Crypt.Combat
             }
             else
             {
-                GetComponent<Mover>().Stop();
+                GetComponent<Mover>().Cancel();
             }
         }
 

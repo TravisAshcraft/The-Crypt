@@ -1,11 +1,10 @@
-﻿using Crypt.Combat;
-using Crypt.Core;
+﻿using Crypt.Core;
 using UnityEngine;
 using UnityEngine.AI;
 
 namespace Crypt.Movement
 {
-    public class Mover : MonoBehaviour
+    public class Mover : MonoBehaviour, IAction
     {
         NavMeshAgent navMeshAgent;
         [SerializeField] Transform target;
@@ -30,7 +29,6 @@ namespace Crypt.Movement
         public void StartMoveAction(Vector3 destination)
         {
             GetComponent<ActionScheduler>().StartAction(this);
-            GetComponent<Fighter>().Cancel();
             MoveTo(destination);
         }
         public void MoveTo(Vector3 destination)
@@ -39,7 +37,7 @@ namespace Crypt.Movement
             navMeshAgent.isStopped = false;
         }
 
-        public void Stop()
+        public void Cancel()
         {
             navMeshAgent.isStopped = true;
         }
