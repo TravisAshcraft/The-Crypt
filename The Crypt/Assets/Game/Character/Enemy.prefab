@@ -1,12 +1,72 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2038959472989976316
+--- !u!1001 &7353534323083035982
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6560761756628288394, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628293186, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628296550, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628299046, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628316322, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628352344, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628355314, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628525178, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628532240, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628535484, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628535974, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560761756628536678, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6560761756762831860, guid: c65a77ce4242cd942adae92d4e4fc418,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65,7 +125,7 @@ PrefabInstance:
     - target: {fileID: 6560761756762831861, guid: c65a77ce4242cd942adae92d4e4fc418,
         type: 3}
       propertyPath: m_Name
-      value: Character
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c65a77ce4242cd942adae92d4e4fc418, type: 3}
