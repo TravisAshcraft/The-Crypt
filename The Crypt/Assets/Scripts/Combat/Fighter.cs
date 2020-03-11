@@ -12,7 +12,7 @@ namespace Crypt.Combat
         void Update()
         {
             if(target == null) {return;}
-            if (target != null && !GetIsInRange())
+            if (!GetIsInRange())
             {
                 GetComponent<Mover>().MoveTo(target.position);
             }
@@ -36,6 +36,11 @@ namespace Crypt.Combat
         public void Cancel()
         {
             target = null;
+        }
+
+        void Hit()
+        {
+
         }
     }
 }
