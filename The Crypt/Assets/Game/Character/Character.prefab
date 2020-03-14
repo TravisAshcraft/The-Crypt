@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 5222993035702983617}
   - component: {fileID: 168810654004755524}
   - component: {fileID: 3343403178968502044}
+  - component: {fileID: 8151125494780871372}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,6 +86,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponRange: 2
+  timeBetweenAttacks: 1
+  weaponDamage: 5
 --- !u!95 &5222993035702983617
 Animator:
   serializedVersion: 3
@@ -128,6 +131,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4835f170e72490b47844b7f92877a939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8151125494780871372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6560761756762831861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10405eaa4c144e34e804b9492e254f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1001 &6560761756628422588
 PrefabInstance:
   m_ObjectHideFlags: 0
