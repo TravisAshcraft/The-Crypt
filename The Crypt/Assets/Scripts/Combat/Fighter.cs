@@ -28,8 +28,16 @@ namespace Crypt.Combat
             }
         }
 
+        public bool CanAttack(CombatTarget combatTarget)
+        {
+            if(combatTarget == null){return false;}
+            Health targetToTest = combatTarget.GetComponent<Health>();
+            return targetToTest != null && !targetToTest.IsDead();
+        }
+
         private void AttackMethod()
         {
+            transform.LookAt(target.transform);
             if(timeSinceLastAttack > timeBetweenAttacks)
             {
                  GetComponent<Animator>().SetTrigger("Attack");

@@ -153,6 +153,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8151125494780871372, guid: c65a77ce4242cd942adae92d4e4fc418,
+        type: 3}
+      propertyPath: healthPoints
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 168810654004755524, guid: c65a77ce4242cd942adae92d4e4fc418, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c65a77ce4242cd942adae92d4e4fc418, type: 3}
