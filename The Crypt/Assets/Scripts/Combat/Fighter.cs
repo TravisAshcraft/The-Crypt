@@ -40,15 +40,22 @@ namespace Crypt.Combat
             transform.LookAt(target.transform);
             if(timeSinceLastAttack > timeBetweenAttacks)
             {
-                 GetComponent<Animator>().SetTrigger("Attack");
-                 timeSinceLastAttack = 0;
-               //triggers the Hit() event.
+                TriggerAttack();
+                timeSinceLastAttack = 0;
+                //triggers the Hit() event.
             }
         }
 
-           //Animation Event
-         void Hit()
+        private void TriggerAttack()
         {
+            GetComponent<Animator>().ResetTrigger("Attack");
+            GetComponent<Animator>().SetTrigger("Attack");
+        }
+
+        //Animation Event
+        void Hit()
+        {
+            if(target == null){ return; }
             target.TakeDamage(weaponDamage);
         }  
 
@@ -65,9 +72,14 @@ namespace Crypt.Combat
 
         public void Cancel()
         {
-            GetComponent<Animator>().SetTrigger("StopAttack");
+            ResetStopAttack();
             target = null;
         }
-        
+
+        private void ResetStopAttack()
+        {
+            GetComponent<Animator>().ResetTrigger("Attack");
+            GetComponent<Animator>().SetTrigger("StopAttack");
+        }
     }
 }
