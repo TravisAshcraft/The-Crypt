@@ -16,10 +16,13 @@ namespace Crypt.Control
         private bool InteractWithCombat()
         {
             RaycastHit [] hits = Physics.RaycastAll(GetMouseRay());
-            foreach (RaycastHit hit in hits)
+                foreach (RaycastHit hit in hits)
             {
                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-               if(target == null) {continue;}
+                if(!GetComponent<Fighter>().CanAttack(target))
+                {
+                    continue;
+                }
                
                if(Input.GetMouseButtonDown(0))
                {
@@ -27,6 +30,7 @@ namespace Crypt.Control
                }
                return true;
             }
+            
             return false;
         }
 
